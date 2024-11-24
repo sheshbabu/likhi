@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- https://webkit.org/blog/7929/designing-websites-for-iphone-x/ -->
+        <!-- https://stackoverflow.com/questions/5103407/mobile-safari-device-rotation-causes-bad-scaling-of-website -->
+        <meta name="viewport" content="initial-scale=1, viewport-fit=cover, width=device-width, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Likhi</title>
+        <script src="./assets/markdown-it.min.js"></script>
+        <script src="./assets/highlight.min.js"></script>
+        <script src="./assets/index.js"></script>
+        <link rel="stylesheet" href="./assets/reset.css">
+        <link rel="stylesheet" href="./assets/github.min.css">
+        <link rel="stylesheet" href="./assets/index.css">
+    </head>
+    <body>
+        <textarea class="note-input" oninput="render()"></textarea>
+        <div class="note-output"></div>
+    </body>
+</html>

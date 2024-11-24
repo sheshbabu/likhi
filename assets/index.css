@@ -1,0 +1,108 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* https://medium.com/going-fullstack/self-hosting-web-font-files-6a46bfc36ffd */
+@font-face {
+    font-family: "SNPro";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url(./SNPro-Regular.woff2) format("woff2"),
+}
+
+@font-face {
+    font-family: "SNPro";
+    font-style: normal;
+    font-weight: 700;
+    src:
+        url(./SNPro-Bold.woff2) format("woff2"),
+}
+
+@font-face {
+    font-family: "Source Code Pro";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url(./SourceCodePro-Regular.woff2) format("woff2"),
+}
+
+.note-input,
+.note-output {
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+.note-input {
+    font-family: "Source Code Pro", monospace;
+    width: 100%;
+    height: 200px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.note-output {
+    font-family: "SNPro", system-ui;
+
+    h1,
+    h2,
+    h3,
+    pre,
+    p,
+    blockquote,
+    ul,
+    table {
+        margin: 1em 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    pre {
+        line-height: 1.3em;
+    }
+
+    h1,
+    h2,
+    h3 {
+        letter-spacing: -0.5px;
+    }
+
+    code {
+        font-size: 16px;
+        font-family: "Source Code Pro", monospace;
+    }
+
+    blockquote {
+        border-left: 4px solid black;
+        padding-left: 20px;
+        margin-left: 0px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid #eee;
+        padding: 5px 15px;
+    }
+
+    th {
+        text-align: left;
+    }
+}
