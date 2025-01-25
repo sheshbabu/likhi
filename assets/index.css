@@ -96,6 +96,10 @@ body {
         color: #757575;
     }
 
+    img {
+        width: 100%;
+    }
+
     h1,
     h2,
     h3,
@@ -132,9 +136,13 @@ body {
     }
 
     blockquote {
-        border-left: 4px solid black;
-        padding-left: 20px;
-        margin-left: 0px;
+        border-left: 3px solid black;
+        padding-left: 10px;
+        margin: 10px 4px;
+
+        p {
+            font-style: italic;
+        }
     }
 
     ul {
